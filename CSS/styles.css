@@ -1,31 +1,4 @@
 /* General Styles */
-/* Banner Styling */
-.banner {
-    width: 100%;
-    height: 300px; /* Adjust height as needed */
-    overflow: hidden;
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Other Styles */
-
-.hero {
-    text-align: center;
-    padding: 50px;
-}
-
-.hero img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -34,30 +7,18 @@ body {
     color: #333;
 }
 
-/* Header and Banner */
+/* Header Styling */
 header {
     text-align: center;
     background: #222;
     color: white;
-    padding: 20px;
-}
-
-.banner {
-    background: url('images/banner.jpg') no-repeat center center/cover;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-size: 1.5em;
+    padding: 15px 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -72,7 +33,49 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-/* Section Styling */
+/* Banner Section (Fixed) */
+.banner {
+    width: 100%;
+    height: 300px;
+    background: url('../media/image2 (2).jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.banner-content {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.hero img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Main Content Container */
 .container {
     width: 80%;
     margin: auto;
@@ -90,11 +93,10 @@ nav ul li a {
     padding: 15px;
     margin: 10px 0;
     border-radius: 5px;
-    text-align: left;
 }
 
 .project img {
-    width: 50%; /* Takes half (6:6 layout) */
+    width: 50%;
     height: auto;
     border-radius: 5px;
 }
@@ -105,8 +107,12 @@ nav ul li a {
 }
 
 /* Contact Section */
-#contact p {
+#contact {
     text-align: center;
+}
+
+#contact p {
+    margin: 10px 0;
 }
 
 /* Footer */
@@ -124,11 +130,18 @@ footer {
         flex-direction: column;
         text-align: center;
     }
+
     .project img, .project-text {
         width: 100%;
     }
+
     .banner {
         height: 200px;
         font-size: 1.2em;
+    }
+
+    .banner-content {
+        width: 90%;
+        padding: 15px;
     }
 }
